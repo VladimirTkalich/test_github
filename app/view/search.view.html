@@ -1,0 +1,23 @@
+
+<!-- <h3>Results of Search state</h3> -->
+<section class="ghsearch-page">
+    <div class="ghsearch-window">
+        <div class="ghsearch-header">
+            <div class="ghsearch-header__string">
+                Found more {{getNumberOfRepoFound()}} repositories with name: "{{data.searchString}}"
+            </div>
+            <button class="btn btn-green" ng-click="newSearch()">New search</button>
+        </div>
+        <div class="ghsearch-body"> 
+            <ul class="repositories">
+                <li class="repository" ng-repeat="repo in data.listReps | limitTo : data.reposOnPage  track by $index" ng-dblclick="showRepo(repo)">
+                    <span class="repository__name">{{repo.name}} : </span>
+                    <span>{{repo.description}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ghsearch-footer">
+            Please double click on the line with the description of the repository for more information.
+        </div>
+    </div>
+</section>

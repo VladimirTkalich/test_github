@@ -1,0 +1,32 @@
+
+<!-- <h3>Repository information state</h3> -->
+<section class="ghsearch-page">
+    <div class="ghsearch-window">
+        <div class="ghsearch-header">
+            <div class="ghsearch-header__string">
+                Repository info.
+            </div>
+        </div>
+        <div class="ghsearch-body"> 
+            <span class="repository__name">Name:</span>
+            <div class="repository">
+                <span>{{selectedRepo.name}}</span>
+            </div>
+            <span class="repository__name">Description:</span>
+            <div class="repository">
+                <span>{{selectedRepo.description}}</span>
+            </div>
+            <span class="repository__name">Created:</span>
+            <div class="repository">
+                <span>{{selectedRepo.created}}</span>
+            </div>
+            <span class="repository__name">Language:</span>
+            <div class="repository">
+                <span>{{selectedRepo.language}}</span>
+            </div>
+        </div>
+        <div class="ghsearch-footer">
+            <button class="btn btn-green" ng-click="returnToSearch()">Close</button>
+        </div>
+    </div>
+</section>

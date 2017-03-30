@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>githubSearch</title>
+
+    <!-- build:css css/vendor.min.css -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js js/vendor.min.js -->
+    <script src="libs/jquery-2.1.0.min.js"></script>
+    <script src="libs/underscore-min.js"></script>
+    <script src="libs/gh3.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- <script src="js/directive.pagination.js"></script> -->
+    <!-- endbuild -->
+
+    <!-- build:js js/main.min.js -->
+    <script src="js/app.js"></script>
+    <script src="js/ghsearch.controller.js"></script>
+    <!-- endbuild -->
+
+  </head>
+
+  <body ng-app="githubSearch">
+
+<!--     <div class="newsearch_btn">
+        <a class="btn btn-green" ui-sref="main" href="main">New search</a>
+    </div>
+ -->   
+
+    <div ng-controller="ghsCtrl">
+        <ui-view></ui-view>
+<!--         <ui-view name="main"></ui-view>
+        <ui-view name="search"></ui-view>
+        <ui-view name="repository"></ui-view>
+ -->    </div>
+
+  </body>
+</html>
